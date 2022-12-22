@@ -1,0 +1,15 @@
+{% block content %}
+    <h2>Warranties</h2>
+    <ul>
+        {% for i in object_list %}
+            <li>
+                Period: {{ i.period_in_months }}<br>
+                Type: {{ i.type }}
+                Coverage details: {{ i.coverage_details }}<br>
+                Exclusions: {{ i.exclusions }}<br>
+                Cusomer service phone number: {{ i.cusomer_service_phone_number }}<br>
+                Start date: {{ i.start_date }}<br>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

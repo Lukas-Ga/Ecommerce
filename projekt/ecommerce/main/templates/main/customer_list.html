@@ -1,0 +1,16 @@
+{% block content %}
+    <h2>Customers</h2>
+    <ul>
+        {% for i in object_list %}
+            <li>
+                First name: {{ i.first_name }}<br>
+                Last name: {{ i.last_name }}
+                Email: {{ i.email }}<br>
+                Phone number: {{ i.phone_number }}<br>
+                Address: {{ i.address }}<br>
+                Birth date: {{ i.birth_date }}<br>
+                Orders: {{i.orders}}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

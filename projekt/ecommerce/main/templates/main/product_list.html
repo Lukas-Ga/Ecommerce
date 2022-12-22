@@ -1,0 +1,15 @@
+{% block content %}
+    <h2>Products</h2>
+    <ul>
+        {% for i in object_list %}
+            <li>
+                Name: {{ i.name }}<br>
+                Description: {{ i.description }}
+                Price: {{ i.price }}<br>
+                Quantity: {{ i.quantity }}<br>
+                Weight: {{ i.weight }}<br>
+                Warranty: {{ i.warranty }}<br>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
